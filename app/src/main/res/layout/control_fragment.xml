@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/population_spinner_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:textSize="@dimen/insication_size"
+        android:text="@string/control_population_hint"/>
+
+    <Spinner
+        android:id="@+id/population_spinner"
+        android:layout_below="@+id/population_spinner_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/population_separator"
+        android:background="@drawable/separator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:layout_below="@+id/population_spinner"/>
+
+    <TextView
+        android:id="@+id/speed_title"
+        android:layout_below="@+id/population_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:textSize="@dimen/insication_size"
+        android:text="@string/control_speed"/>
+
+    <RadioGroup
+        android:id="@+id/speed_chooser"
+        android:layout_below="@+id/speed_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/speed_normal">
+
+        <RadioButton
+            android:id="@+id/speed_slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_speed_slow"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/speed_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_speed_normal"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+        <RadioButton
+            android:id="@+id/speed_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_speed_fast"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/population_separator1"
+        android:background="@drawable/separator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:layout_below="@+id/speed_chooser"/>
+
+    <TextView
+        android:id="@+id/jump_title"
+        android:layout_below="@+id/population_separator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:textSize="@dimen/insication_size"
+        android:text="@string/control_jump"/>
+
+    <RadioGroup
+        android:id="@+id/jump_chooser"
+        android:layout_below="@+id/jump_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/jump_none">
+
+        <RadioButton
+            android:id="@+id/jump_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_no_jump"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/jump_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_short_jump"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/jump_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_long_jump"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/jump_xlong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_very_long_jump"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/population_separator2"
+        android:background="@drawable/separator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:layout_below="@+id/jump_chooser"/>
+
+    <TextView
+        android:id="@+id/finger_title"
+        android:layout_below="@+id/population_separator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:textSize="@dimen/insication_size"
+        android:text="@string/control_finger_reaction"/>
+
+    <RadioGroup
+        android:id="@+id/finger_chooser"
+        android:layout_below="@+id/finger_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/finger_follow">
+
+        <RadioButton
+            android:id="@+id/finger_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_finger_follow"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/finger_escape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_finger_escape"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+        <RadioButton
+            android:id="@+id/finger_indifferent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_finger_indifferent"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/population_separator3"
+        android:background="@drawable/separator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:layout_below="@+id/finger_chooser"/>
+
+    <TextView
+        android:id="@+id/field_title"
+        android:layout_below="@+id/population_separator3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:textSize="@dimen/insication_size"
+        android:text="@string/control_background"/>
+
+    <RadioGroup
+        android:id="@+id/field_chooser"
+        android:layout_below="@+id/field_title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/field_wood">
+
+        <RadioButton
+            android:id="@+id/field_towel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_screen_towel"
+            android:layout_marginLeft="@dimen/horizontal_margin_middle"/>
+
+        <RadioButton
+            android:id="@+id/field_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_screen_stars"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+        <RadioButton
+            android:id="@+id/field_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/control_screen_food"
+            android:layout_marginLeft="@dimen/horizontal_margin_large"/>
+
+    </RadioGroup>
+
+
+    <ImageView
+        android:id="@+id/population_separator4"
+        android:background="@drawable/separator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin_large"
+        android:layout_below="@+id/field_chooser"/>
+
+</RelativeLayout>
+</ScrollView>

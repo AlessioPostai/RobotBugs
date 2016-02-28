@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context="own.alessio.com.robotbugs.MainActivity$PlaceholderFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/my_rl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </RelativeLayout>
+
+    <ToggleButton
+        android:id="@+id/runWorldBtn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_gravity="center"
+        android:rotation="-90"
+        android:textOff="@string/run_world_off"
+        android:textOn="@string/run_world_on"
+        android:textStyle="bold"
+        android:background="@drawable/run_stop_world"
+        android:textSize="20sp"
+        android:textColor="@color/primary_text"/>
+
+</LinearLayout>

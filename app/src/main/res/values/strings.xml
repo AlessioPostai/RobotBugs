@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">RobotBugs</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="section_control">Control</string>
+    <string name="section_insects">Insects</string>
+
+
+    <!-- Tab titles -->
+    <string name="tab_field">GAME</string>
+    <string name="tab_instects_chooser">CONTROL</string>
+    <string name="tab_settings">COLLECTION</string>
+
+    <!-- Start/stop ants -->
+    <string name="run_world_off">RUN</string>
+    <string name="run_world_on">STOP</string>
+    <string name="ant_descriptor">This is my lovely ant.</string>
+
+    <!-- Feedback to user -->
+    <string name="phf_finger_lifted">lifted !!!</string>
+    <string name="phf_out">outside !!!</string>
+
+    <!-- Control fragment -->
+    <string name="control_population_hint">Population size.</string>
+    <string name="control_population_over">You exceeded maximum allowed population.</string>
+    <string name="control_population_under">Population size must be least one.</string>
+
+    <string name="btn_confirm">Confirm</string>
+    <string name="toast_stored">Last settings were stored.</string>
+
+    <string name="control_speed">Speed.</string>
+    <string name="control_speed_slow">Slow</string>
+    <string name="control_speed_normal">Normal</string>
+    <string name="control_speed_fast">Fast</string>
+
+    <string name="control_jump">Jump.</string>
+    <string name="control_no_jump">None</string>
+    <string name="control_short_jump">Short</string>
+    <string name="control_long_jump">Long</string>
+    <string name="control_very_long_jump">XLong</string>
+
+    <string name="control_finger_reaction">Finger reaction.</string>
+    <string name="control_finger_follow">Catch</string>
+    <string name="control_finger_escape">Escape</string>
+    <string name="control_finger_indifferent">Indifferent</string>
+
+    <string name="control_background">Background.</string>
+    <string name="control_screen_towel">Hearts</string>
+    <string name="control_screen_stars">Stars</string>
+    <string name="control_screen_food">Flowers</string>
+
+    <!-- Menu -->
+    <string name="menu_feedback_yes">Feedback</string>
+    <string name="menu_feedback_no">Mute</string>
+
+</resources>
